@@ -16,13 +16,10 @@ public class TestController {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    public void testPrimeController(){
-
-    }
-
     @Test
-    public void greetingShouldReturnDefaultMessage() throws Exception {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
-                String.class)).contains("Hello, World");
+    public void testPrimeController() throws Exception {
+        assertThat(this.restTemplate
+                .getForObject("http://localhost:" + port + "/prime/10", String.class))
+                .contains("[2,3,5,7]");
     }
 }
