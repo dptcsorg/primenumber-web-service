@@ -1,6 +1,3 @@
-#############################
-## Application - Variables ##
-#############################
 
 # company name
 variable "company" {
