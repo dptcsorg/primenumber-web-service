@@ -3,6 +3,7 @@
 [![Java CI with Gradle](https://github.com/deepaksisupal/primenumber-web-service/actions/workflows/build_and_push.yml/badge.svg)](https://github.com/deepaksisupal/primenumber-web-service/actions/workflows/build_and_push.yml)
 
 ## Prerequisite
+
 ### For saving tf state
 Create an blob storage to serve as terraform backend. This is a one time stuff.
 ```
