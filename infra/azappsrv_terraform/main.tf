@@ -11,6 +11,15 @@ resource "azurerm_resource_group" "appservice-rg" {
   }
 }
 
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tstates"
+    storage_account_name = "primenumber091"
+    container_name       = "tstate"
+    key                  = "terraform.tfstate"
+  }
+}
+
 # Create the App Service Plan
 resource "azurerm_app_service_plan" "service-plan" {
   name                = "deep-${var.region}-${var.environment}-${var.app_name}-service-plan"
