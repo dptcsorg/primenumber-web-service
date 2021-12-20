@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.deep'
 version = '0.1.0'
-sourceCompatibility = '11'
+sourceCompatibility = '8'
 
 configurations {
 	compileOnly {
