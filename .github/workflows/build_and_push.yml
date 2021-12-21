@@ -4,6 +4,7 @@
 name: Java CI with Gradle
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
     paths-ignore: [ 'infra/azappsrv_terraform/**' ]
