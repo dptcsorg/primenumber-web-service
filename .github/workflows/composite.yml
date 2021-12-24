@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: myCompositeAction
-      uses: dptcsorg/primenumber-web-service/.github/workflows@main
+      uses: dptcsorg/primenumber-web-service/.github/workflows@v2
       with:
         destinationFolder: '/whatever/folder'
     - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
